@@ -1,0 +1,4 @@
+services:
+#    th_core.example:
+#        class: TH\CoreBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
