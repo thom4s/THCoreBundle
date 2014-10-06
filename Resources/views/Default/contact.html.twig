@@ -1,0 +1,37 @@
+{# src/TH/CoreBundle/Resources/views/Default/contact.html.twig #}
+
+{% extends "THCoreBundle:default:base.html.twig" %}
+
+{% block container %}
+
+  <div id="contactPage" class="content inside">
+    <div class="inner-content">
+
+      <p class="taglines">
+        Pour me contacter, vous pouvez utiliser directement mon <a href="mailto:thomasflorentin@yahoo.fr">mail</a> ou remplir ce formulaire :
+      </p>
+
+      <div class="contact-form">
+        <form id="contact" method="post">
+
+          <fieldset>
+              <input name="name" require id="name" type="text" placeholder="Votre nom">  
+              <input name="email" require id="email" type="text" placeholder="Mail">  
+              <textarea rows="3" require name="text" id="text" placeholder="Message"></textarea>
+            </fieldset>
+
+            <input type="submit" value="Envoyer" name="submit">
+            <div class="control-group">
+            <p class="success messsage" style="display:none">Message bien envoyé. A bientôt !</p>
+
+            <p class="error messsage" style="display:none">N'oubliez pas de renseigner votre nom, adresse mail et message.</p>
+          </div>
+        </form>
+      </div>
+
+    </div><!-- end .inner-content -->
+    <?php include('footer-content.php'); ?>
+
+  </div><!-- end .content -->
+
+{% endblock %}

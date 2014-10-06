@@ -1,0 +1,19 @@
+{# src/TH/CoreBundle/Resources/views/stickymenu.html.twig #}
+
+
+    <div id="sticky" class="hide sticky">
+      <nav class="menu-call">
+        <?php
+          $full_name = $_SERVER['PHP_SELF'];
+          $name_array = explode('/',$full_name);
+          $count = count($name_array);
+          $page_name = $name_array[$count-1];
+        ?>
+ 
+        <a href="/" class="button ">accueil</a>
+        <a href="contact" class="button <?php echo ($page_name=='contact.php')?'active':'';?>">contact</a>
+        <a href="references" class="button <?php echo ($page_name=='references.php')?'active':'';?>">références</a>
+        <a href="lab" class="button <?php echo ($page_name=='lab.php')?'active':'';?>">lab</a>
+        <a href="http://tickets.tf-staging.com/" target="_blank" class="button ">bug tracker</a>
+      </nav>
+    </div>

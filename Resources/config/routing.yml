@@ -3,5 +3,5 @@ th_core_homepage:
     defaults: { _controller: THCoreBundle:Default:index }
 
 th_core_contact:
-    path:     /
+    path:     /contact
     defaults: { _controller: THCoreBundle:Default:contact }

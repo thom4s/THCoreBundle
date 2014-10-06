@@ -1,1 +1,25 @@
-Hello !
+{# src/TH/CoreBundle/Resources/views/Default/base.html.twig #}
+
+{% extends "THCoreBundle:default:base.html.twig" %}
+
+{% block container %}
+
+  <div id="index" class="content home hide">
+    <div class="inner-content">
+
+      <p class="taglines">
+        Je suis Designer & Developpeur Web. Et je veille particulièrement au respect des <strong>contenus</strong> et au <strong>suivi du projet</strong>.
+      </p>
+
+      <p id="portfolio" class="taglines hide">
+        Références :
+            <a href="references"></a>  | 
+      </p>
+
+    </div><!-- end .inner-content -->
+      
+    {% include "THCoreBundle:default:footernotes.html.twig" %}
+
+  </div><!-- end .content -->
+
+{% endblock %}
