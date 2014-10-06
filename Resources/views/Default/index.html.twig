@@ -4,14 +4,58 @@
 
 {% block container %}
 
-  <div id="index" class="content home hide">
+  <header class="header home first clearfix">
+
+    <div class="brand inner-header">
+
+      <div id="whoami" class="">
+          <h1>Thomas FLorentin</h1>
+          <h3>Designer & Développeur Web</h3>
+          <p class='city'>Paris / Samois sur Seine</p>
+      </div>
+
+    </div><!--end .brand -->
+
+
+    <nav class="main-nav clearfix">
+      <ul class="">
+
+        <li><a href="references" alt="références de thomas florentin" title="références de thomas florentin">références</a></li>
+        <li><a href="lab" alt="lab de thomas florentin" title="lab de thomas florentin">lab</a></li>
+        <!--<li><a href="notes">Notes & Listes</a></li>-->
+        <li><a href="contact" alt="contacter thomas florentin" title="contacter thomas florentin">contact</a></li>
+        <li><a href="http://tickets.tf-staging.com/" target="_blank" title="bug tracker for thomas florentin" alt="bug tracker for thomas florentin">bug tracker</a></li>
+
+      </ul>
+    </nav><!-- end .primary-nav -->
+
+
+    <nav class="support-nav clearfix">
+      <ul class="clearfix">
+
+        <li><a href="http://www.facebook.fr/thomasflorentin" target="_blank"><img src="{{ asset('bundles/thcore/img/icon-fb.png') }}" alt="facebook icon"></a></li>
+
+        <li><a href="https://twitter.com/thomasflorentin" target="_blank"><img src="{{ asset('bundles/thcore/img/icon-twit.png') }}" alt="twitter icon"></a></li>
+
+        <li><a href="https://plus.google.com/103878162090932025949/posts" target="_blank"><img src="{{ asset('bundles/thcore/img/icon-gplus.png') }}" alt="googleplus icon"></a></li>
+
+        <li><a href="http://www.linkedin.com/pub/thomas-florentin/70/218/153" target="_blank"><img src="{{ asset('bundles/thcore/img/icon-li.png') }}" alt="linkedin icon"></a></li>
+
+        <li><a href="/rss"><img src="{{ asset('bundles/thcore/img/icon-rss.png') }}" alt="rss icon"></a></li>
+
+      </ul>
+    </nav><!-- end .support-nav -->
+
+
+  </header><!-- end header.header -->
+  <div id="index" class="content home">
     <div class="inner-content">
 
       <p class="taglines">
         Je suis Designer & Developpeur Web. Et je veille particulièrement au respect des <strong>contenus</strong> et au <strong>suivi du projet</strong>.
       </p>
 
-      <p id="portfolio" class="taglines hide">
+      <p id="portfolio" class="taglines">
         Références :
             <a href="references"></a>  | 
       </p>
