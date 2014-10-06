@@ -1,3 +1,7 @@
 th_core_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: THCoreBundle:Default:index }
+
+th_core_contact:
+    path:     /
+    defaults: { _controller: THCoreBundle:Default:contact }
